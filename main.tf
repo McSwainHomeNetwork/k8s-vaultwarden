@@ -191,7 +191,7 @@ resource "helm_release" "vaultwarden" {
 
   set {
     name  = "env[0].value"
-    value = "false"
+    value = "true"
     type  = "string"
   }
 
