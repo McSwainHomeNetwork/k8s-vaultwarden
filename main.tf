@@ -413,7 +413,7 @@ resource "helm_release" "vaultwarden" {
 
   set {
     name  = "env[15].value"
-    value = "info"
+    value = "debug"
     type  = "string"
   }
 
