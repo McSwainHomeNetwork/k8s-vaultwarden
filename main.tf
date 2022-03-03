@@ -405,4 +405,16 @@ resource "helm_release" "vaultwarden" {
     type  = "string"
   }
 
+  set {
+    name  = "env[15].name"
+    value = "LOG_LEVEL"
+    type  = "string"
+  }
+
+  set {
+    name  = "env[15].value"
+    value = "info"
+    type  = "string"
+  }
+
 }
